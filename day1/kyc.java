@@ -1,10 +1,28 @@
 package day1;
 
+import java.util.Scanner;
+
 public class kyc {
     public static void main(String[] args) {
+        Scanner user = new Scanner(System.in);
+        String name="" , pan = "", address = "";
+        long aadhar = 0L, mobile = 0L;
         
-        String name="Revanth" , pan = "YAKY2950", address = "Namakkal, Tiruchengode",atm = "SBI";
-        long aadhar = 6326371404L, mobile = 9787872051L;
-        System.out.println("Thanks for showing interest in our "+atm+" The User "+name+" has been registered");
+        System.out.println("Welcome to the Bank");
+
+        System.out.println("Enter your name: ");
+        name = user.nextLine();
+        System.out.println("Enter your address: ");
+        address = user.nextLine();
+        System.out.println("Enter PAN card: ");
+        pan = user.next();
+        System.out.println("Enter your mobile no: ");
+        mobile = user.nextLong();
+        System.out.println("Enter your aadhar number: ");
+
+        System.out.println("Thanks for registering our system "+name+" Hope you enjoyed the experience. For more details we contact you "+mobile);
+   
+   
+   
     }
 }
