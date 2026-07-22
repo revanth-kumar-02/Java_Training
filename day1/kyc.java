@@ -23,6 +23,6 @@ public class kyc {
         System.out.println("Thanks for registering our system "+name+" Hope you enjoyed the experience. For more details we contact you "+mobile);
    
    
-   
+        user.close();
     }
 }

@@ -44,6 +44,6 @@ public class currencyconverter {
             System.out.println("Invalid Currency");
         }
 
-
+        money.close();
     }
 }

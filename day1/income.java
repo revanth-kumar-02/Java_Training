@@ -28,5 +28,6 @@ public class income {
             tax = 0;
         }
         System.out.println(salary+" earnings need to pay "+tax);
+        income.close();
     }
 }
