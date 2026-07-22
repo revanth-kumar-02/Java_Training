@@ -28,8 +28,12 @@ public class emi_cal {
                     System.out.println("ROI 15%");                    
                     break;
                 default:
+                    System.out.println("Invalid tenure");
                     break;
             }
+            System.out.println("Your repayment EMI "+emi);
+        }else {
+            System.out.println(cost+" is not eligible for EMI");
         }
         
     }
