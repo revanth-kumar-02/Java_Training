@@ -21,6 +21,8 @@ public class param {
         (bmi>24.0&&bmi<28.0)?"Overweight":"Obese";
         System.out.println("The user "+name+"and here is your health update "+status);
 
+
+        info.close();
     }
     
 

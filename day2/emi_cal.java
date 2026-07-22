@@ -35,6 +35,6 @@ public class emi_cal {
         }else {
             System.out.println(cost+" is not eligible for EMI");
         }
-        
+        check.close();
     }
 }

@@ -68,6 +68,6 @@ public class voterapp {
         if (option == 2) {
             System.out.println("Thanks for visiting our system");
         }
-
+        decision.close();
     }
 }
