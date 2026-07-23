@@ -14,3 +14,12 @@ a) from string class to other types via wrapper class parse function support
 
 
 Command line arg
+
+
+LOop statements:
+avoid statement redundancy
+repeat logic until condition true/false
+
+while
+do while
+for / forEach
