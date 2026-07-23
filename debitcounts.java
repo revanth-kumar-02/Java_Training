@@ -1,3 +1,5 @@
+//linear iteration program type
+
 import java.util.Scanner;
 public class debitcounts {
     public static void main(String[] args) {
