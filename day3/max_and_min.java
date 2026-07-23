@@ -1,5 +1,3 @@
-package day3;
-
 import java.util.Scanner;
 
 public class max_and_min {

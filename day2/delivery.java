@@ -75,6 +75,11 @@ public class delivery {
         System.out.println("Food from menu      : " + foodChoice);
         System.out.println("Food Price          : " + foodPrice);
         System.out.println("=================================");
+        if (isValid) {
+            System.out.println("Delivery details accepted");
+        } else {
+            System.out.println("Please correct the invalid details and try again");
+        }
 
         check.close();
     }

@@ -1,11 +1,14 @@
 package day1;
+
 import java.util.Scanner;
+
 public class currencyconverter {
     public static void main(String[] args) {
         Scanner money = new Scanner(System.in);
-        int option,inr = 1;
-        double usd = 0.01, eur = 0.009, amount = 0, convertedValue = 0;
+        int option, inr = 1;
+        double amount = 0, convertedValue = 0;
         double inrUsd = 96.0, inrEur = 110.0;
+        double usd = 1.0 / inrUsd, eur = 1.0 / inrEur;
 
         System.out.println("Currency Converter");
         System.out.println("Choose which currency :");
@@ -16,31 +19,28 @@ public class currencyconverter {
         System.out.println("Enter the currency: ");
         option = money.nextInt();
 
-        if(option == 1) {
+        if (option == 1) {
             System.out.println("INR To USD Converter ");
             System.out.println("Enter the amount: ");
             amount = money.nextDouble();
-            convertedValue = amount*usd;
-            System.out.println("The given amount is "+amount+" and the converted value is "+convertedValue);
+            convertedValue = amount * usd;
+            System.out.println("The given amount is " + amount + " and the converted value is " + convertedValue);
 
-        }
-         else if(option == 2) {
+        } else if (option == 2) {
             System.out.println("USD To INR Converter ");
             System.out.println("Enter the amount: ");
             amount = money.nextDouble();
-            convertedValue = amount*inr;
-            System.out.println("The given amount is "+amount+" and the converted value is "+convertedValue);
+            convertedValue = amount * inr;
+            System.out.println("The given amount is " + amount + " and the converted value is " + convertedValue);
 
-        }
-        else if(option == 3) {
+        } else if (option == 3) {
             System.out.println("INR To EUR Converter ");
             System.out.println("Enter the amount: ");
             amount = money.nextDouble();
-            convertedValue = amount*eur;
-            System.out.println("The given amount is "+amount+" and the converted value is "+convertedValue);
+            convertedValue = amount * eur;
+            System.out.println("The given amount is " + amount + " and the converted value is " + convertedValue);
 
-        }
-        else {
+        } else {
             System.out.println("Invalid Currency");
         }
 

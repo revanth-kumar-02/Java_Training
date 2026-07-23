@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class kyc {
     public static void main(String[] args) {
         Scanner user = new Scanner(System.in);
-        String name="" , pan = "", address = "";
+        String name = "", pan = "", address = "";
         long aadhar = 0L, mobile = 0L;
-        
+
         System.out.println("Welcome to the Bank");
 
         System.out.println("Enter your name: ");
@@ -19,10 +19,11 @@ public class kyc {
         System.out.println("Enter your mobile no: ");
         mobile = user.nextLong();
         System.out.println("Enter your aadhar number: ");
+        aadhar = user.nextLong();
 
-        System.out.println("Thanks for registering our system "+name+" Hope you enjoyed the experience. For more details we contact you "+mobile);
-   
-   
+        System.out.println("Thanks for registering our system " + name + ". Address: " + address + ". PAN: " + pan
+                + ". Aadhar: " + aadhar + ". We will contact you on " + mobile);
+
         user.close();
     }
 }

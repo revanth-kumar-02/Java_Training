@@ -1,3 +1,5 @@
+day 3
+
 Brief introduction about bitwise 
 (its operatohr symbol)
 bitwise cant work with double,float data types
@@ -23,3 +25,8 @@ repeat logic until condition true/false
 while
 do while
 for / forEach
+
+
+while loop types
+linear type
+Non linear type

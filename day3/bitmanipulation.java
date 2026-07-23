@@ -1,5 +1,3 @@
-package day3;
-
 import java.util.Scanner;
 
 public class bitmanipulation {
@@ -9,10 +7,12 @@ public class bitmanipulation {
         System.out.println("Enter the number ");
         num = check.nextInt();
 
-        if((num&1)==0) System.out.println("Even");
-        else System.out.println("Odd");
-        //positive or negative
-        int result = ~num+1;
+        if ((num & 1) == 0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+        // positive or negative
+        int result = ~num + 1;
         System.out.println(result);
         check.close();
     }
